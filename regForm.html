@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BU MUN Register</title>
+<link href="css files/bbss.css" rel="stylesheet">
+<link rel="stylesheet" href="css files/bootstrap.min.css">
+<script src="js files/jq.min.js"></script> 
+<script src="js files/pop.min.js"></script> 
+<script src="js files/bbss3.1.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="MainForm.html">Bahria MUN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="MainForm.html">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item active"> <a class="nav-link" href="regForm.html">Registration Form
+		  <span class="sr-only"></span></a> </li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="aboutUs.html">About Us</a> <a class="dropdown-item" href="wismun.html">What is MUN</a> </div>
+      </li>      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-fluid text-center">
+  <h1 class="display-4">Dimplomacy Over Depths</h1>
+  <hr class="my-4">
+</div>
+<div class="container">
+	<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d7a4a13 elementor-widget elementor-widget-spacer" data-id="d7a4a13" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-10ebd0c elementor-widget elementor-widget-text-editor" data-id="10ebd0c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">					
+
+	<div class="text-success" >
+ 	 <h2 class="text-center" ><strong>Enter Information</strong></h2>
+	</div>
+								
+<!-- Input Area -->				
+	<div class = "container" align="center"><br>		
+		<form id="myform" method="post" action="insertphp.php" class="ajax">
+			<div class="form-group col-lg-8">
+				<h5>Delegate Name:</h5>
+				<input id="f-name"type="text" name="name" class="form-control" required></div>
+			
+			<div class="form-group col-lg-8">
+				<h5>Email Address:</h5>
+				<input id="f-email"type="text" name="email" class="form-control" required></div>
+			<div class="form-group col-lg-8" class="text-center">
+				<h5>Education level:</h5>
+				 <select id="f-edu" name="edu">
+  					<option value="School" class="text-center">  School Student  </option>
+ 				    <option value="College">  College Student  </option>
+ 				    <option value="University">University Student</option>
+ 				    <option value="Graduated">Graduated</option>
+				 </select> </div>
+			
+			<div class="form-group col-lg-8">
+			  <h5>Institute:</h5>
+			  <input id="f-institue"type="text" name="institue" class="form-control" required></div>
+			
+			<div class="form-group col-lg-8">
+			  <h5>Reference(If any):</h5>
+			  <input id="f-reference"type="text" name="reference" class="form-control"></div>
+				
+	<button type="submit" name="submit" id= "submit" value="submit" class= "btn btn-success"> SUBMIT </button> 
+	<p id="form-message"></p>
+		</form>
+	</div></div></div></div></div></div>
+	<script src="js files/bbvalidate/dist/bootstrap-validate.js"></script>
+	<script>
+		bootstrapValidate(['#f-name'], 'min:4:Enter 4 character!|max:20:Enter 20 chars at most!');
+		bootstrapValidate('#f-name', 'alpha:Name does not contaions numbers. Do they?');
+		bootstrapValidate(['#f-email'], 'email:Enter a valid email address');
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js files/chkk.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156453279-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-156453279-1');
+</script>
+
+<hr>
+<div class="row text-center">
+    <div class="col-lg-8 offset-lg-2">
+      <p>Note: You will receive your Registration confirmation email with your ID soon.&nbsp; <em>(Make sure you type email address correct)</em>. </p>
+      <p><strong>You will get your allotment soon on your email after payment confirmation.</strong>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid text-center"></div>
+  <div class="row" style="background: #343C40">
+    <div class="text-center col-lg-6 offset-lg-3">
+		<hr>
+      <h4>Footer</h4>
+      <p>Copyright &copy; 2020 &middot; All Rights Reserved to Foxy &middot;</p>
+		<hr>
+    </div>
+ </div>	
+</body>
+</html>					
